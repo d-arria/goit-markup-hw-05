@@ -725,23 +725,9 @@ button {
   height: 100%;
   background-color: var(--portfolio-overlay-color);
 
-  opacity: 0;
-
   transition-property: transform;
   transition-timing-function: var(--timing-function);
   transition-duration: 250ms;
-}
-
-.portfolio-overlay:hover,
-.portfolio-overlay:focus {
-  opacity: 1;
-  transform: translateY(-100%);
-}
-
-.link-portfolio:hover .portfolio-overlay,
-.link-portfolio:focus .portfolio-overlay {
-  opacity: 1;
-  transform: translateY(-100%);
 }
 
 .overlay-text {
@@ -757,6 +743,16 @@ button {
   font-size: 18px;
   line-height: 1.56;
   color: var(--white-text-color);
+}
+
+.portfolio-overlay:hover,
+.portfolio-overlay:focus {
+  transform: translateY(-100%);
+}
+
+.link-portfolio:hover .portfolio-overlay,
+.link-portfolio:focus .portfolio-overlay {
+  transform: translateY(-100%);
 }
 
 /* ----------------------------------------------------- */
@@ -793,6 +789,7 @@ button {
 
 .join-caption {
   font-weight: 700;
+  font-size: 14px;
   text-transform: uppercase;
 
   margin-bottom: 20px;
